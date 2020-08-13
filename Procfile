@@ -1,1 +1,1 @@
-web: gunicorn your_wsgi.wsgi --log-file -
+web: gunicorn Carrot_project.wsgi --log-file -
