@@ -6,7 +6,7 @@ class Carrot(models.Model):
     temperature = models.FloatField()
     wetness = models.FloatField()
     award = models.FloatField()
-    end_status = models.BooleanField(default=False)
+    end_status = models.IntegerField(default=0)
 
     class Meta:
         ordering = ['time',]
