@@ -5,7 +5,7 @@ class Carrot(models.Model):
     time = models.DateTimeField(default=timezone.now, null=True)
     temperature = models.FloatField()
     wetness = models.FloatField()
-    award = models.FloatField(null = True)
+    award = models.FloatField(default=0, null=True)
     end_status = models.IntegerField(default=0)
 
     class Meta:
